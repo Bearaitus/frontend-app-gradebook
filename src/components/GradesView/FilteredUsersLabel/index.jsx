@@ -28,7 +28,6 @@ export const FilteredUsersLabel = () => {
     messages.visibilityLabel,
     {
       filteredUsers: <BoldText text={filteredUsersCount} />,
-      totalUsers: <BoldText text={totalUsersCount} />,
     },
   );
 };

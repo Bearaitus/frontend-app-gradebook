@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   visibilityLabel: {
     id: 'gradebook.GradesTab.usersVisibilityLabel',
-    defaultMessage: 'Showing {filteredUsers} of {totalUsers} total learners',
+    defaultMessage: 'Showing {filteredUsers} total students',
     description: 'Users visibility label',
   },
 });
