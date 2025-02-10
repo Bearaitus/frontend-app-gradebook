@@ -62,10 +62,10 @@ const UsernameLabelReplacement = () => {
   return (
     <div>
       <div>
-        {formatMessage(messages.usernameHeading)}
+        Username
       </div>
       <div className="font-weight-normal student-key">
-        {formatMessage(messages.studentKeyLabel)}
+        Student Key
         { mastersOnlyFieldAsterisk }
       </div>
     </div>
