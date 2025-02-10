@@ -16,13 +16,7 @@ export const FilterMenuToggle = () => {
   const toggleFilterMenu = thunkActions.app.filterMenu.useToggleMenu();
   const { formatMessage } = useIntl();
   return (
-    <Button
-      id="edit-filters-btn"
-      className="btn-primary align-self-start"
-      onClick={toggleFilterMenu}
-    >
-      <Icon src={FilterAlt} className="mr-1" /> {formatMessage(messages.editFilters)}
-    </Button>
+    ' '
   );
 };
 
