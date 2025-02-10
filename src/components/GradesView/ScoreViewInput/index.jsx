@@ -12,19 +12,12 @@ import messages from './messages';
  */
 export const ScoreViewInput = () => {
   const { formatMessage } = useIntl();
-  const { gradeFormat } = selectors.grades.useGradeData();
+  const { gradeFormat } = "percent";
   const toggleFormat = actions.grades.useToggleGradeFormat();
   return (
     <Form.Group controlId="ScoreView">
-      <Form.Label>"Score View":</Form.Label>
-      <Form.Control
-        as="select"
-        value={gradeFormat}
-        onChange={toggleFormat}
-      >
-        <option value="percent">{formatMessage(messages.percent)}</option>
-        <option value="absolute">{formatMessage(messages.absolute)}</option>
-      </Form.Control>
+      <Form.Label>Score View</Form.Label>
+      <Form.Text>{formatMessage(messages.percent)}</Form.Text>
     </Form.Group>
   );
 };
