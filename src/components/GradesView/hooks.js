@@ -22,7 +22,7 @@ export const useGradesViewData = ({ updateQueryParams }) => {
       gradebook: "View individual grades",
     },
     handleFilterBadgeClose,
-    mastersHint: formatMessage(messages.mastersHint),
+    mastersHint: "Personal data is not collected, stored, or processed.",
   };
 };
 
