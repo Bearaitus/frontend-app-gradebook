@@ -16,7 +16,7 @@ export const ScoreViewInput = () => {
   const toggleFormat = actions.grades.useToggleGradeFormat();
   return (
     <Form.Group controlId="ScoreView">
-      <Form.Label>{formatMessage(messages.scoreView)}:</Form.Label>
+      <Form.Label>"Score View":</Form.Label>
       <Form.Control
         as="select"
         value={gradeFormat}

@@ -19,8 +19,7 @@ export const useGradesViewData = ({ updateQueryParams }) => {
 
   return {
     stepHeadings: {
-      filter: formatMessage(messages.filterStepHeading),
-      gradebook: formatMessage(messages.gradebookStepHeading),
+      gradebook: "View individual grades",
     },
     handleFilterBadgeClose,
     mastersHint: formatMessage(messages.mastersHint),
