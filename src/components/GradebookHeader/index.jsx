@@ -20,10 +20,7 @@ export const GradebookHeader = () => {
   const dashboardUrl = instructorDashboardUrl();
   return (
     <div className="gradebook-header">
-      <a href={dashboardUrl} className="mb-3">
-        <span aria-hidden="true">{'<< '}</span>
-        {formatMessage(messages.backToDashboard)}
-      </a>
+      
       <h1>{formatMessage(messages.gradebook)}</h1>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         <h2 className="text-break">{courseId}</h2>
