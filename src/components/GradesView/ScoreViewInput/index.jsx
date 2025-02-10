@@ -15,10 +15,7 @@ export const ScoreViewInput = () => {
   const { gradeFormat } = "percent";
   const toggleFormat = actions.grades.useToggleGradeFormat();
   return (
-    <Form.Group controlId="ScoreView">
-      <Form.Label>Score View</Form.Label>
-      <Form.Text>{formatMessage(messages.percent)}</Form.Text>
-    </Form.Group>
+    ' '
   );
 };
 ScoreViewInput.propTypes = {};
