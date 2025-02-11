@@ -13,7 +13,6 @@ export const GradebookHeader = () => {
     areGradesFrozen,
     canUserViewGradebook,
     courseId,
-    courseTitle,
     handleToggleViewClick,
     showBulkManagement,
     toggleViewMessage,
@@ -22,7 +21,7 @@ export const GradebookHeader = () => {
   return (
     <div className="gradebook-header">
       
-      <h1>{formatMessage(messages.gradebook)} - {courseTitle}</h1>
+      <h1>{formatMessage(messages.gradebook)} - {courseId}</h1>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
