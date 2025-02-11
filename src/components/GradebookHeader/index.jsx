@@ -22,7 +22,7 @@ export const GradebookHeader = () => {
   return (
     <div className="gradebook-header">
       
-      <h1>{formatMessage(messages.gradebook)} - {courseId} {title}</h1>
+      <h2>{formatMessage(messages.gradebook)} - {courseId}</h2>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
