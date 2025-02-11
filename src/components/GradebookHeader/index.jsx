@@ -20,8 +20,10 @@ export const GradebookHeader = () => {
 
   const extractCourseName = (courseId) => {
     const parts = courseId.split("+");
-    
-    return parts[1].replaceAll("_", " ");
+    if (parts.length > 1) {
+      return parts[1];
+    }
+    return "Unknown Course";
   };
 
   const courseName = extractCourseName(courseId);
