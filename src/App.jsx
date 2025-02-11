@@ -16,7 +16,7 @@ const App = () => (
     <Head />
     <div>
       <Header />
-      <main>
+      <main style={{ minHeight: '80vh' }}>
         <Routes>
           <Route
             path="/:courseId"
