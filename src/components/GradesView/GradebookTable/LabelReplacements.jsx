@@ -63,9 +63,6 @@ const UsernameLabelReplacement = () => {
     <div>
       <div>
         Username
-      </div>
-      <div className="font-weight-normal student-key">
-        Student Key
         { mastersOnlyFieldAsterisk }
       </div>
     </div>
@@ -81,7 +78,6 @@ const MastersOnlyLabelReplacement = (message) => {
   return (
     <div>
       {formatMessage(message)}
-      { mastersOnlyFieldAsterisk }
     </div>
   );
 };
