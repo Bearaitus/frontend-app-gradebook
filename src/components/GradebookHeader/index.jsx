@@ -7,6 +7,8 @@ import { instructorDashboardUrl } from 'data/services/lms/urls';
 import useGradebookHeaderData from './hooks';
 import messages from './messages';
 
+console.log("Gradebook Header Data:", gradebookHeaderData);
+
 export const GradebookHeader = () => {
   const { formatMessage } = useIntl();
   const {
@@ -22,7 +24,6 @@ export const GradebookHeader = () => {
     <div className="gradebook-header">
       
       <h2>{formatMessage(messages.gradebook)} - {courseId}</h2>
-      <p>{areGradesFrozen} - {handleToggleViewClick} - {toggleViewMessage}</p>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
