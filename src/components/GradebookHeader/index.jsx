@@ -20,9 +20,6 @@ export const GradebookHeader = () => {
 
   const extractCourseName = (courseId) => {
     const parts = courseId.split("+");
-    if (parts.length > 1) {
-      return parts[1].replaceAll("_", " ");
-    }
     return "Unknown Course";
   };
 
@@ -32,7 +29,7 @@ export const GradebookHeader = () => {
   return (
     <div className="gradebook-header">
       
-      <h2>{formatMessage(messages.gradebook)} - {courseName}</h2>
+      <h2>{formatMessage(messages.gradebook)} of course id - {courseName}</h2>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
