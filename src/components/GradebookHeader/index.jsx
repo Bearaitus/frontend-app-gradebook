@@ -16,12 +16,13 @@ export const GradebookHeader = () => {
     handleToggleViewClick,
     showBulkManagement,
     toggleViewMessage,
+    title,
   } = useGradebookHeaderData();
   const dashboardUrl = instructorDashboardUrl();
   return (
     <div className="gradebook-header">
       
-      <h1>{formatMessage(messages.gradebook)} - {courseId}</h1>
+      <h1>{formatMessage(messages.gradebook)} - {courseId} {title}</h1>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
