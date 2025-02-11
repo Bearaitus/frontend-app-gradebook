@@ -26,7 +26,6 @@ export const GradebookHeader = () => {
     return "Unknown Course";
   };
 
-  const courseId = selectors.app.useCourseId();
   const courseName = extractCourseName(courseId);
 
   const dashboardUrl = instructorDashboardUrl();
