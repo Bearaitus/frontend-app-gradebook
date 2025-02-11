@@ -17,11 +17,23 @@ export const GradebookHeader = () => {
     showBulkManagement,
     toggleViewMessage,
   } = useGradebookHeaderData();
+
+  const extractCourseName = (courseId) => {
+    const parts = courseId.split("+");
+    if (parts.length > 1) {
+      return parts[1].replaceAll("_", " ");
+    }
+    return "Unknown Course";
+  };
+
+  const courseId = selectors.app.useCourseId();
+  const courseName = extractCourseName(courseId);
+
   const dashboardUrl = instructorDashboardUrl();
   return (
     <div className="gradebook-header">
       
-      <h2>{formatMessage(messages.gradebook)} - {courseId}</h2>
+      <h2>{formatMessage(messages.gradebook)} - {courseName}</h2>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
