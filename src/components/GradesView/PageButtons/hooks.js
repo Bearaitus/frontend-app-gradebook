@@ -21,12 +21,12 @@ export const usePageButtonsData = () => {
     prev: {
       disabled: !prevPage,
       onClick: getPrevGrades,
-      text: "Previous page",
+      text: "Предыдущая страница",
     },
     next: {
       disabled: !nextPage,
       onClick: getNextGrades,
-      text: "Next page",
+      text: "Следующая страница",
     },
   };
 };

@@ -8,7 +8,7 @@ const messages = defineMessages({
   },
   hint: {
     id: 'gradebook.GradesView.search.hint',
-    defaultMessage: 'Search by username',
+    defaultMessage: 'Поиск по логину',
     description: 'A hint explaining the ways a user can search',
   },
 });

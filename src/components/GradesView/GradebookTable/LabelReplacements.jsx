@@ -62,7 +62,7 @@ const UsernameLabelReplacement = () => {
   return (
     <div>
       <div>
-        Username
+        Логин
         { mastersOnlyFieldAsterisk }
       </div>
     </div>

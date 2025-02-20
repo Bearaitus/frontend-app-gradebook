@@ -19,10 +19,10 @@ export const useGradesViewData = ({ updateQueryParams }) => {
 
   return {
     stepHeadings: {
-      gradebook: "View individual grades",
+      gradebook: "Просмотр индивидуальных оценок",
     },
     handleFilterBadgeClose,
-    mastersHint: "Unique non-personalised account.",
+    mastersHint: "Уникальная неперсонализированная учетная запись.",
   };
 };
 

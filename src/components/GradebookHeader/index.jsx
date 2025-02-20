@@ -23,7 +23,7 @@ export const GradebookHeader = () => {
     if (parts.length > 1) {
       return parts[1];
     }
-    return "Unknown Course";
+    return "Неизвестный курс";
   };
 
   const courseName = extractCourseName(courseId);
