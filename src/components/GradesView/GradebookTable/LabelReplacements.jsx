@@ -33,11 +33,11 @@ const TotalGradeLabelReplacement = () => {
         )}
       >
         <div>
-          {formatMessage(messages.totalGradeHeading)}
+          Общий прогресс (%)
           <div id="courseGradeTooltipIcon">
             <Icon
               className="fa fa-info-circle"
-              screenReaderText={formatMessage(messages.totalGradePercentage)}
+              screenReaderText="Значение общего прогресса студента высчитывается в процентах"
             />
           </div>
         </div>
