@@ -13,7 +13,7 @@ const messages = defineMessages({
   },
   totalGradeHeading: {
     id: 'gradebook.GradesView.table.headings.totalGrade',
-    defaultMessage: 'Total Grade (%)',
+    defaultMessage: 'Общий прогресс (%)',
     description: 'Gradebook table total grade column header',
   },
   usernameHeading: {
