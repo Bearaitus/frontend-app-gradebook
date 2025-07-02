@@ -22,20 +22,7 @@ const TotalGradeLabelReplacement = () => {
   const { formatMessage } = useIntl();
   return (
     <div>
-      <OverlayTrigger
-        trigger={['hover', 'focus']}
-        key="left-basic"
-        placement={isRtl(getLocale()) ? 'right' : 'left'}
-        overlay={(
-          <Tooltip id="course-grade-tooltip">
-            {formatMessage(messages.totalGradePercentage)}
-          </Tooltip>
-        )}
-      >
-        <div>
-          Общий прогресс (%)
-        </div>
-      </OverlayTrigger>
+      Общий прогресс
     </div>
   );
 };
