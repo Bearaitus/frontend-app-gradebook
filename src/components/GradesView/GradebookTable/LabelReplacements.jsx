@@ -34,12 +34,6 @@ const TotalGradeLabelReplacement = () => {
       >
         <div>
           Общий прогресс (%)
-          <div id="courseGradeTooltipIcon">
-            <Icon
-              className="fa fa-info-circle"
-              screenReaderText="Значение общего прогресса студента высчитывается в процентах"
-            />
-          </div>
         </div>
       </OverlayTrigger>
     </div>
