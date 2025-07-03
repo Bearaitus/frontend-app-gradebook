@@ -48,14 +48,16 @@ export const useGradebookTableData = () => {
   });
 
   const nullMethod = () => null;
+  const filteredHeadings = headings.filter(h => h !== Headings.email && h !== Headings.fullName);
 
   return {
-    columns: headings.map(mapHeaders),
+    columns: filteredHeadings.map(mapHeaders),
     data: grades.map(mapRows),
     grades,
     nullMethod,
     emptyContent: formatMessage(messages.noResultsFound),
   };
+
 };
 
 export default useGradebookTableData;
