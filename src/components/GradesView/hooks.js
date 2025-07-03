@@ -22,7 +22,7 @@ export const useGradesViewData = ({ updateQueryParams }) => {
       gradebook: "Просмотр индивидуальных оценок",
     },
     handleFilterBadgeClose,
-    mastersHint: "Уникальная неперсонализированная учетная запись.",
+    mastersHint: "Уникальная неперсонализированная учетная запись в тренажёре PT EdTechLab",
   };
 };
 
