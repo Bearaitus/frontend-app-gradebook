@@ -14,7 +14,7 @@ export const PageButtons = () => {
     >
       <Button
         style={{ margin: '20px' }}
-        variant="outline-primary"
+        variant="outline-danger"
         disabled={prev.disabled}
         onClick={prev.onClick}
       >
@@ -22,7 +22,7 @@ export const PageButtons = () => {
       </Button>
       <Button
         style={{ margin: '20px' }}
-        variant="outline-primary"
+        variant="outline-danger"
         disabled={next.disabled}
         onClick={next.onClick}
       >
