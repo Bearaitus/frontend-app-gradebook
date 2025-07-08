@@ -32,7 +32,7 @@ export const GradebookHeader = () => {
   return (
     <div className="gradebook-header">
       
-      <h2 style={{ marginLeft: 20, marginTop: 20 }}>Журнал прогресса для курса {courseName}</h2>
+      <h2 style={{ marginTop: 20 }}>Журнал прогресса для курса {courseName}</h2>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
