@@ -27,7 +27,7 @@ export const SearchControls = () => {
         value={searchValue}
       />
       <small className="form-text text-muted search-help-text">
-        {hintText}
+        Поиск по логину
       </small>
     </div>
   );
