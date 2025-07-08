@@ -19,7 +19,7 @@ export const useGradesViewData = ({ updateQueryParams }) => {
 
   return {
     stepHeadings: {
-      gradebook: "Просмотр индивидуальных оценок",
+      gradebook: "Прогресс студентов",
     },
     handleFilterBadgeClose,
     mastersHint: "Уникальная неперсонализированная учетная запись в тренажёре PT EdTechLab",
