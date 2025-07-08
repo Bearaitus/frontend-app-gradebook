@@ -22,6 +22,7 @@ export const GradebookTable = () => {
   return (
     <div className="gradebook-container">
       <DataTable
+        style={{ backgroundColor: '#D8E0EB' }} // замените на желаемый цвет
         columns={columns}
         data={data}
         rowHeaderColumnKey="username"
