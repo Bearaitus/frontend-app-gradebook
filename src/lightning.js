@@ -1,5 +1,5 @@
 module.exports = () => {
-  if (process.env.DISPLAY_FEEDBACK_WIDGET === "true") {
+  if (process.env.DISPLAY_FEEDBACK_WIDGET === "false") {
     window.lightningjs ||
       (function (n) {
         var e = "lightningjs";
