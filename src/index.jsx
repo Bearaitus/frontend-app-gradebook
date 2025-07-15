@@ -11,11 +11,15 @@ import {
   subscribe,
 } from '@edx/frontend-platform';
 
+// import lightning from './lightning';
 
 import messages from './i18n';
 import App from './App';
 
-
+subscribe(APP_READY, () => {
+  // lightning();
+  ReactDOM.render(<App />, document.getElementById('root'));
+});
 
 initialize({
   handlers: {
