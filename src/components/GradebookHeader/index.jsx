@@ -1,12 +1,9 @@
 import React from 'react';
-
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Button } from '@openedx/paragon';
-
 import { instructorDashboardUrl } from 'data/services/lms/urls';
 import useGradebookHeaderData from './hooks';
 import messages from './messages';
-
 export const GradebookHeader = () => {
   const { formatMessage } = useIntl();
   const {
@@ -17,22 +14,19 @@ export const GradebookHeader = () => {
     showBulkManagement,
     toggleViewMessage,
   } = useGradebookHeaderData();
-
   const extractCourseName = (courseId) => {
     const parts = courseId.split("+");
     if (parts.length > 1) {
       return parts[1];
     }
-    return "Неизвестный курс";
+    return "Unknown Course";
   };
-
   const courseName = extractCourseName(courseId);
-
   const dashboardUrl = instructorDashboardUrl();
   return (
     <div className="gradebook-header">
       
-      <h2 style={{ marginTop: 20 }}>Журнал прогресса для курса {courseName}</h2>
+      <h2 style={{ marginTop: 20 }}>Gradebook for course {courseName}</h2>
       <div className="subtitle-row d-flex justify-content-between align-items-center">
         
         {showBulkManagement && (
@@ -54,5 +48,4 @@ export const GradebookHeader = () => {
     </div>
   );
 };
-
 export default GradebookHeader;

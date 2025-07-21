@@ -1,18 +1,13 @@
 import React from 'react';
-
 import { useIntl, getLocale, isRtl } from '@edx/frontend-platform/i18n';
 import {
   Icon,
   OverlayTrigger,
   Tooltip,
 } from '@openedx/paragon';
-
 import { StrictDict } from 'utils';
-
 import messages from './messages';
-
 export const totalGradePercentageMessage = 'Total Grade values are always displayed as a percentage.';
-
 /**
  * <TotalGradeLabelReplacement />
  * Total Grade column header.
@@ -22,18 +17,16 @@ const TotalGradeLabelReplacement = () => {
   const { formatMessage } = useIntl();
   return (
     <div>
-      Общий прогресс
+      Total Progress
     </div>
   );
 };
-
 /**
  * Asterisk to display next to heading labels that are only used for masters students
  */
 const mastersOnlyFieldAsterisk = (
   <span className="font-weight-normal">*</span>
 );
-
 /**
  * <UsernameLabelReplacement />
  * Username column header.  Lists that Student Key is possibly available
@@ -43,13 +36,12 @@ const UsernameLabelReplacement = () => {
   return (
     <div>
       <div>
-        Логин
+        Username
         { mastersOnlyFieldAsterisk }
       </div>
     </div>
   );
 };
-
 /**
  * <MastersOnlyLabelReplacement {message}>
  * Column header for fields that are only available for masters students
@@ -62,7 +54,6 @@ const MastersOnlyLabelReplacement = (message) => {
     </div>
   );
 };
-
 export default StrictDict({
   TotalGradeLabelReplacement,
   UsernameLabelReplacement,

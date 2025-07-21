@@ -1,13 +1,10 @@
 import { useIntl } from '@edx/frontend-platform/i18n';
-
 import { actions, thunkActions } from 'data/redux/hooks';
 import messages from './messages';
-
 export const useGradesViewData = ({ updateQueryParams }) => {
   const { formatMessage } = useIntl();
   const fetchGrades = thunkActions.grades.useFetchGrades();
   const resetFilters = actions.filters.useResetFilters();
-
   const handleFilterBadgeClose = (filterNames) => () => {
     resetFilters(filterNames);
     updateQueryParams(filterNames.reduce(
@@ -16,14 +13,12 @@ export const useGradesViewData = ({ updateQueryParams }) => {
     ));
     fetchGrades();
   };
-
   return {
     stepHeadings: {
-      gradebook: "Прогресс студентов",
+      gradebook: "Student Progress",
     },
     handleFilterBadgeClose,
-    mastersHint: "Уникальная неперсонализированная учетная запись в тренажёре PT EdTechLab",
+    mastersHint: "Unique, non-personalized account in the PT EdTechLab simulator",
   };
 };
-
 export default useGradesViewData;
