@@ -22,7 +22,7 @@ const TotalGradeLabelReplacement = () => {
   const { formatMessage } = useIntl();
   return (
     <div>
-      Общий прогресс
+      Прогресс по практике
     </div>
   );
 };
