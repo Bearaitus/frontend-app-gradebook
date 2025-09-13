@@ -17,7 +17,7 @@ const TotalGradeLabelReplacement = () => {
   const { formatMessage } = useIntl();
   return (
     <div>
-      Total Progress
+      Educational Cases Progress
     </div>
   );
 };
