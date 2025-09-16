@@ -18,10 +18,10 @@ export const useGradebookTableData = () => {
   const { formatMessage } = useIntl();
   const grades = selectors.grades.useAllGrades();
   const headings = selectors.root.useGetHeadings();
-  
+
   const cleanLabel = (text) => {
     if (typeof text !== 'string') return text;
-    return text.replace(/\s*\d+$/, ''); // убираем цифры в конце
+    return text.replace(/\s*\d+$/, ''); // убираем цифры только в конце
   };
 
   const mapHeaders = (heading) => {
@@ -40,7 +40,11 @@ export const useGradebookTableData = () => {
       label = cleanedHeading;
     }
 
-    return { Header: label, accessor: cleanedHeading, id: cleanedHeading };
+    return { 
+      Header: label,      // показываем красивое имя
+      accessor: heading,  // оставляем исходное с цифрой, чтобы совпадало с данными
+      id: heading,        // уникальный id — тоже оригинальный
+    };
   };
 
 
