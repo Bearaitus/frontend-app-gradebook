@@ -18,22 +18,31 @@ export const useGradebookTableData = () => {
   const { formatMessage } = useIntl();
   const grades = selectors.grades.useAllGrades();
   const headings = selectors.root.useGetHeadings();
+  
+  const cleanLabel = (text) => {
+    if (typeof text !== 'string') return text;
+    return text.replace(/\s*\d+$/, ''); // убираем цифры в конце
+  };
 
   const mapHeaders = (heading) => {
+    const cleanedHeading = cleanLabel(heading);
+
     let label;
-    if (heading === Headings.totalGrade) {
+    if (cleanedHeading === Headings.totalGrade) {
       label = <LabelReplacements.TotalGradeLabelReplacement />;
-    } else if (heading === Headings.username) {
+    } else if (cleanedHeading === Headings.username) {
       label = <LabelReplacements.UsernameLabelReplacement />;
-    } else if (heading === Headings.email) {
+    } else if (cleanedHeading === Headings.email) {
       label = <LabelReplacements.MastersOnlyLabelReplacement {...messages.emailHeading} />;
-    } else if (heading === Headings.fullName) {
+    } else if (cleanedHeading === Headings.fullName) {
       label = <LabelReplacements.MastersOnlyLabelReplacement {...messages.fullNameHeading} />;
     } else {
-      label = heading;
+      label = cleanedHeading;
     }
-    return { Header: label, accessor: heading };
+
+    return { Header: label, accessor: cleanedHeading, id: cleanedHeading };
   };
+
 
   const mapRows = entry => ({
     [Headings.username]: (
