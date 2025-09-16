@@ -49,7 +49,7 @@ export const GradeButton = ({ entry, subsection }) => {
         className="btn-header grade-button"
         onClick={onClick}
       >
-        {label}
+        {label}%
       </Button>
     );
 };
