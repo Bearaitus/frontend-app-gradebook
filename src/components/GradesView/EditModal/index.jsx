@@ -32,37 +32,7 @@ export const EditModal = () => {
   } = useEditModalData();
 
   return (
-    <ModalDialog
-      title={formatMessage(messages.title)}
-      isOpen={isOpen}
-      onClose={onClose}
-      size="xl"
-      hasCloseButton
-      isFullscreenOnMobile
-    >
-      <ModalDialog.Body>
-        <div>
-          <ModalHeaders />
-          <Alert variant="danger" show={!!error} dismissible={false}>
-            {error}
-          </Alert>
-          <OverrideTable />
-          <div>{formatMessage(messages.visibility)}</div>
-          <div>{formatMessage(messages.saveVisibility)}</div>
-        </div>
-      </ModalDialog.Body>
-
-      <ModalDialog.Footer>
-        <ActionRow>
-          <ModalDialog.CloseButton variant="tertiary">
-            {formatMessage(messages.closeText)}
-          </ModalDialog.CloseButton>
-          <Button variant="primary" onClick={handleAdjustedGradeClick}>
-            {formatMessage(messages.saveGrade)}
-          </Button>
-        </ActionRow>
-      </ModalDialog.Footer>
-    </ModalDialog>
+    null
   );
 };
 
